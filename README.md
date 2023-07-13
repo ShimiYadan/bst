@@ -27,7 +27,7 @@ npm install
 }
 
 
-# using example Typescript
+# usage example Typescript
 import { Bst } from 'bst'
 
 const bst = new Bst()
