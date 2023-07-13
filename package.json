@@ -1,0 +1,16 @@
+{
+  "name": "@shimiyadan/bst",
+  "version": "1.0.0",
+  "description": "A Binary Search Tree is a rooted binary tree data structure, this library provides functions such as insert, inorder and delete.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "watch": "tsc --watch"
+  },
+  "author": "shimi yadan",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.1.6"
+  }
+}
