@@ -7,18 +7,18 @@ install node -v 14+
 # run the command
 npm install
 
-# config package.json
+# microsevice config example package.json
 {
   "name": "[micro service name]",
   "version": "1.0.0",
-  "description": "",
+  "description": "import the binary-search-tree library",
   "main": "[the server path]",
   "keywords": [],
   "author": "Shimi Yadan",
   "license": "ISC",
   "dependencies": {
     "@types/node": "^17.0.21",
-    "bst": "git+https://github.com/ShimiYadan/bst.git",
+    "bst": "git+https://github.com/ShimiYadan/bst.git#1.0.0",
   },
   "devDependencies": {
     "@types/express": "^4.17.17",
@@ -26,8 +26,7 @@ npm install
   }
 }
 
-
-# usage example Typescript
+# usage example
 import { Bst } from 'bst'
 
 const bst = new Bst()
@@ -35,10 +34,20 @@ bst.insert(5)
 bst.insert(3)
 bst.insert(7)
 
-bst.forEachInorder((element) => {
-  console.log(element)
-})
+/*
+  print all node data by inorder
+  and preorder search
 
-bst.forEachPreorder((element) => {
+          5 
+        /   \
+      3       7
+*/
+bst.forEachInorder((element: any) => {
   console.log(element)
 })
+// output: 3 5 7 
+
+bst.forEachPreorder((element: any) => {
+  console.log(element)
+})
+// output: 5 3 7 
