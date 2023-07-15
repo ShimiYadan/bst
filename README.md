@@ -18,7 +18,7 @@ npm install
   "license": "ISC",
   "dependencies": {
     "@types/node": "^17.0.21",
-    "bst": "git+https://github.com/ShimiYadan/bst.git#1.0.0",
+    "bst": "git+https://github.com/ShimiYadan/bst.git#v1.0.1",
   },
   "devDependencies": {
     "@types/express": "^4.17.17",
