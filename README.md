@@ -8,6 +8,7 @@ install node -v 14+
 npm install
 
 # microsevice config example package.json
+```
 {
   "name": "[micro service name]",
   "version": "1.0.0",
@@ -25,8 +26,10 @@ npm install
     "typescript": "file:typescript"
   }
 }
+```
 
 # usage example
+```
 import { Bst } from 'bst'
 
 const bst = new Bst()
@@ -50,4 +53,5 @@ bst.forEachInorder((element: any) => {
 bst.forEachPreorder((element: any) => {
   console.log(element)
 })
-// output: 5 3 7 
+// output: 5 3 7
+```
