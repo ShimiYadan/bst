@@ -2,7 +2,7 @@ import { Node } from './node'
 
 export class Bst {
 
-  private root: any | null
+  private root: any
 
   constructor() {
     this.root = null;
